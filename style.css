@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #797979;
+  --container-color: #4169e1;
+  --border-radius: 8px;
+  --text-color: #fff;
+  --border-color: tomato;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+.container {
+  background-color: var(--container-color);
+  padding: 30px;
+  width: 450px;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(226, 226, 226, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.993) 0px 0px 0px 1px;
+}
+.container h1 {
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-block: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.container input {
+  width: 390px;
+  padding: 10px;
+}
+input::placeholder {
+  font-size: 16px;
+}
+.container label {
+  color: var(--text-color);
+  font-size: 20px;
+}
+.qr-header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container input,
+select {
+  margin-block: 10px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--border-color);
+  outline: none;
+}
+.qr-footer {
+  display: flex;
+  justify-content: center;
+}
+.qr-footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--border-color);
+  padding: 10px 50px;
+  margin-inline: 10px;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+}
+.qr-footer a:hover {
+  background-color: rgb(255, 68, 0);
+  transition: all 0.4s ease;
+}
+.qr-body {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.qr-body img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-block: 10px;
+  padding: 20px;
+  border: 0.5px solid var(--text-color);
+  border-radius: var(--border-radius);
+}
+@media (max-width: 500px){
+  .container{
+    width: 380px;
+    max-height: 100%;
+  }
+  .qr-header h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .qr-header input{
+    width: 100%;
+  }
+ 
+  .qr-footer a {
+    width: 100%;
+    text-align: center;
+    padding: 5px 35px;
+  }
+}
