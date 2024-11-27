@@ -27,14 +27,14 @@ body {
   box-shadow: rgba(226, 226, 226, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.993) 0px 0px 0px 1px;
 }
-.container h1 {
+.qr-header h1 {
   text-transform: uppercase;
   color: var(--text-color);
   margin-block: 10px;
   font-weight: 700;
   text-align: center;
 }
-.container input {
+.qr-header input {
   width: 390px;
   padding: 10px;
 }
